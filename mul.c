@@ -35,7 +35,7 @@ void m_mul(stack_t **stack, unsigned int number)
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
 	}
-	product = h->next->n % h->n;
+	product = h->next->n * h->n;
 	h->next->n = product;
 	*stack = h->next;
 	free(h);
