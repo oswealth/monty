@@ -9,7 +9,7 @@
 void m_pstr(stack_t **stack, unsigned int number)
 {
 	stack_t *h;
-	(void)number;
+	int flag = 0;
 
 	h = *stack;
 	while (h)
@@ -20,6 +20,8 @@ void m_pstr(stack_t **stack, unsigned int number)
 		}
 		printf("%c", h->n);
 		h = h->next;
+		flag =1;
 	}
-	printf("\n");
+	if (flag)
+			printf("\n");
 }
