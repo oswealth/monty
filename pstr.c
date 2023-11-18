@@ -23,5 +23,5 @@ void m_pstr(stack_t **stack, unsigned int number)
 		flag =1;
 	}
 	if (flag)
-			printf("\n");
+		printf("\n");
 }
