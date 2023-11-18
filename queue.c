@@ -46,5 +46,6 @@ void add_queue(stack_t **stack, int n)
 	{
 		aux->next = new_node;
 		new_node->prev = aux;
+		free(aux);
 	}
 }
