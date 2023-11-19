@@ -11,5 +11,5 @@ void m_stack(stack_t **stack, unsigned int number)
 {
 	(void) stack;
 	(void) number;
-	data.mode = 0;
+	data.mode = 1;
 }
