@@ -17,6 +17,7 @@ void m_pall(stack_t **stack, unsigned int number)
 	while (h)
 	{
 		printf("%d\n", h->n);
+		free(h);
 		h = h->next;
 	}
 }
