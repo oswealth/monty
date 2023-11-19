@@ -9,6 +9,7 @@
 void m_push(stack_t **head, unsigned int number)
 {
 	int n, i = 0, flag = 0;
+	stack_t *new_node = NULL;
 
 	if (data.value)
 	{
@@ -35,4 +36,5 @@ void m_push(stack_t **head, unsigned int number)
 		add_node(head, n);
 	else
 		add_queue(head, n);
+	free(new_node);
 }
